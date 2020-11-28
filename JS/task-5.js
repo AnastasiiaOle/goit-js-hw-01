@@ -1,40 +1,31 @@
-const deliveryCountry = prompt (`Введите страну доставки`);
+let deliveryCountry = prompt(`Введите страну доставки`);
 let cost;
-
-
-switch (deliveryCountry) {
-​
+switch(deliveryCountry) {
     case 'китай':
         cost = 100;
-        const deliveryCountry = "Китай";
+        deliveryCountry = "Китай";
         console.log(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
         break;
-    
     case 'чили':
         cost = 250;
-        const deliveryCountry = "Чили";
+        deliveryCountry = "Чили";
         console.log(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
         break;
-    
     case 'австралия':
         cost = 170;
-        const deliveryCountry = "Австралию";
+        deliveryCountry = "Австралию";
         console.log(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
         break;
-    
     case 'индия':
         cost = 80;
-        const deliveryCountry = "Индию";
+        deliveryCountry = "Индию";
         console.log(`Доставка в ${deliveryCountry} будет стоить ${cost} кредитов`);
         break;
-    
     case 'ямайка':
         cost = 120;
-        const deliveryCountry = "Ямайку";
+        deliveryCountry = "Ямайку";
         console.log(`Доставка на ${deliveryCountry} будет стоить ${cost} кредитов`);
         break;
-    
     default:
         console.log(`В вашей стране доставка не доступна`);
-    
 }
