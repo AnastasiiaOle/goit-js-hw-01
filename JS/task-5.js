@@ -1,5 +1,8 @@
 let deliveryCountry = prompt(`Введите страну доставки`);
 let cost;
+console.log(deliveryCountry.toLowerCase());
+
+
 switch(deliveryCountry) {
     case 'китай':
         cost = 100;
