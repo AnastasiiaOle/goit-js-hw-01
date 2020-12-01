@@ -1,9 +1,11 @@
 let deliveryCountry = prompt(`Введите страну доставки`);
 let cost;
-console.log(deliveryCountry.toLowerCase());
 
+if (deliveryCountry === null){
+    console.log("Запрос отменен");
+} else{
 
-switch(deliveryCountry) {
+switch(deliveryCountry.toLowerCase()) {
     case 'китай':
         cost = 100;
         deliveryCountry = "Китай";
@@ -31,4 +33,5 @@ switch(deliveryCountry) {
         break;
     default:
         console.log(`В вашей стране доставка не доступна`);
+}
 }
